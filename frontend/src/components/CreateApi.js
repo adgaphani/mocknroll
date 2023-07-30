@@ -9,6 +9,8 @@ const CreateApi = () => {
   const [apiEndpoint, setApiEndpoint] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  const SERVER_URL = '/api';
+
   const handleAddProperty = () => {
     setProperties([...properties, { name: '', type: 'string' }]);
   };
@@ -19,8 +21,6 @@ const CreateApi = () => {
     setProperties(updatedProperties);
   };
 
-  const SERVER_URL = 'http://localhost:3500';
-
   const handleGenerateAPI = async () => {
     try {
       const data = {
@@ -30,10 +30,10 @@ const CreateApi = () => {
       };
   
       // Post the data to the server
-      await axios.post(`${SERVER_URL}/api/createApi`, data);
+      await axios.post(`${SERVER_URL}/createApi`, data);
   
       // Construct the endpoint URL
-      const apiEndpoint = `${SERVER_URL}/api/${apiName}`;
+      const apiEndpoint = `${SERVER_URL}/${apiName}`;
       setApiEndpoint(apiEndpoint);
   
       setErrorMessage(''); // Clear any previous error message on successful generation
