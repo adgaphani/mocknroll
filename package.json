@@ -1,0 +1,36 @@
+{
+  "name": "mocknroll",
+  "version": "1.0.0",
+  "description": "custom mock api maker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "serve": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adgaphani/mockit.git"
+  },
+  "keywords": [
+    "mock",
+    "apis",
+    "cussstom",
+    "apis"
+  ],
+  "author": "Phani Setty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adgaphani/mockit/issues"
+  },
+  "homepage": "https://github.com/adgaphani/mockit#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
