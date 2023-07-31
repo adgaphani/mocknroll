@@ -4,8 +4,8 @@
   "description": "custom mock api maker",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "serve": "nodemon backend/server.js"
+    "start": "node server.js",
+    "serve": "nodemon server.js"
   },
   "repository": {
     "type": "git",
