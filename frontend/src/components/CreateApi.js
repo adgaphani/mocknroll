@@ -9,7 +9,9 @@ const CreateApi = () => {
   const [apiEndpoint, setApiEndpoint] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
-  const SERVER_URL = '/api';
+  const SERVER_URL = 'http://18.221.171.249:5000';
+  ;
+  ;
 
   const handleAddProperty = () => {
     setProperties([...properties, { name: '', type: 'string' }]);
